@@ -2,10 +2,13 @@
 
 :root {
     --primary-color:#7C3AED;
-    --secondary-color: 
+    --dark-gray:#9CA3AF;
+    --light-gray: #F3F4F6;
+ 
 }
 body {
     font-family: 'Merriweather', serif;
+    margin: 0px;
 }
 
 hr {
@@ -78,5 +81,50 @@ hr {
 }
 .navigation .link-active {
     font-weight: bold;
+
+}
+.lerner-header {
+    padding: 2rem;
+}
+
+.lerner-img{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.lerner-heading {
+    color: var(--dark-gray);
+    padding-top: 1rem;
+    text-align: center;
+}
+.section {
+    padding: 2rem;
+}
+.section h2{
+    text-align: center;
+}
+
+.off-white-section {
+    background-color: var(--light-gray);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    color: white;
+    text-align:center;
+    border-top-right-radius: 1rem;
+
+}
+.footer-header {
+    font-weight: bold;
+}
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
 
 }
