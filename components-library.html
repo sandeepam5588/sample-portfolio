@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>compoenent library for portfolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    
+    <title>sandeep portfolio</title>
 </head>
 <body>
     <h1> components library for simple portfolio</h1>
@@ -14,35 +16,38 @@
     <p>This is paragraph</p>
     <small>This is relatively small text</small>
     <hr>
+   <p>this paragraph has <strong>bold</strong> text</p>
 
     <h1>@containers</h1>
     <h2>@fluid container</h2>
-    <p>this is going to be a fluid conatiner.it will go full width of page. with some margin</p>
+
+    <div class="container">this is going to be a fluid conatiner.it will go full width of page. with some margin</div>
+
 
     <h2>@center container</h2>
-    <p>This is going to be a center container. it will go till a given width and center content</p>
+    <div class="container container-center">This is going to be a center container. it will go till a given width and center content</div>
     <hr>
 
     <h1>@links</h1>
-    <a href="/">primary limk</a> 
-    <a href="/">secondary link</a>
+    <a href="/" class="link link-primary">primary link</a> 
+    <a href="/" class="link link-secondary">secondary link</a>
     <hr>
 
     <h1>@lists</h1>
     <h2>unordered lists</h2>
    <p> we dont want to show the bullets in the unordered lists 
     remove them with css</p>
-    <ul>
+    <ul class="list-non-bullet">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
     <h2>inline lists</h2>
    <p> insted of going in a new row. we will create a list which will take columns</p>
-    <ul>
-        <li>item one</li>
-        <li>item two</li>
-        <li>item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">item-one</li>
+        <li class="list-item-inline">item-two</li>
+        <li class="list-item-inline">item-three</li>
     </ul>
     <h2>reverse ordered list</h2>
     <p>counting of weill go reverse for this lists</p>
@@ -56,17 +61,17 @@
 
     <h1>@nav</h1>
    <p> navigation is used on the top of the page and used to get to different pages</p>
-    <nav>
-        <div>IamBrand</div>
-        <ul>
-            <li>
-                <a href="/">home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">IamBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="/" class="link link-active">home</a>
             </li>
-            <li>
-                <a href="/">project</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">project</a>
             </li>
-            <li>
-                <a href="/">blogs</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">blogs</a>
             </li>
         </ul>
     </nav>
@@ -74,37 +79,48 @@
 
 
     <h1>@header</h1>
-    <header>
-        <img src="/">
-        <h1>this is heading h1 insider header</h1>
+    <header class="lerner-header">
+        <img src="images/lerner.svg" class="lerner-img">
+        <h1 class="lerner-heading">Sandeep the Web Developer</h1>
     </header>
     <hr>
+
+
     <h1>@section</h1>
    <p> a section is used to separate parts of pages. in marketing website you would have seen a header folllowed by sections of features. team, pricing, contact info etc.</p>
-   <h2>normal section</h2>
-   <section>
-   <h2>heading inside section</h2>
-   <p>text defining this section and many more things</p>
-   <a href="/">primary button</a>
+   <h2>@normal section</h2>
+   <section class="section">
+       <div class="container container-center">
+           <h2>heading inside section</h2>
+           <p>text defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more things</p>
+            <a href="/" class="link link-primary">Primary Button</a>
+       </div>
 </section>
 
-   <h2>an off white sectoin</h2>
-   <section>
+   <h2>@off white sectoin</h2>
+   <section class="section off-white-section">
+    <div class="container container-center">
        <h2>inside off white section</h2>
-       <p>text defining this section and many more things</p>
-       <a href="/">primary button</a>
+       <p>text defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more thingstext defining this section and many more things</p>
+       <a href="/" class="link link-primary">primary button</a>
+    </div>
    </section>
 <hr>
 
 
 <h1>@footer</h1>
-<footer>
-    <div>
-        <div>header inside footer</div>
-        <ul>
-            <li>social one</li>
-            <li>social two</li>
-            <li>social three</li>
+<footer class="footer">
+    <div class="footer-header">header inside footer</div>
+        <ul class="links-social list-non-bullet">
+           <li class="list-item-inline">
+               <a href="/" class="link link-primary">twitter</a>
+           </li>
+           <li class="list-item-inline">
+               <a href="/" class="link link-primary">github</a>
+            </li>
+           <li class="list-item-inline">
+               <a href="/" class="link link-primary">linkedin</a>
+            </li>
         </ul>
     </div>
 </footer>
